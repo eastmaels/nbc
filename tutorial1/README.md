@@ -1,8 +1,8 @@
 # Neon Bootcamp - Tutorial 1
 
-This is the submission for the first tutorial to Neon's Bootcamp as original described [here](https://bootcamp.neonevm.org/videos/deploy-an-erc-20-for-spl-token-on-neon-evm-and-test-on-solana).
+This is the submission for the first tutorial to Neon's Bootcamp as originally described [here](https://bootcamp.neonevm.org/videos/deploy-an-erc-20-for-spl-token-on-neon-evm-and-test-on-solana).
 
-The objective of this first tutorial is to get acquainted with the Neon network and understand the concepts the lie under how EVM communicates with Solana.
+The objective of this first tutorial is to get acquainted with the Neon network and understand the concepts that are under how EVM communicates with Solana.
 
 The tutorial is composed of severals steps which breaks down into:
 
