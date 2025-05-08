@@ -58,3 +58,12 @@ PRIVATE_KEY_SOLANA=<SOLANA_PRIVATE_KEY>
 1. Deployed Token
 
 https://neon-devnet.blockscout.com/token/0xA87B8BD076458bb19F640718c82F13C46Fc180d0
+
+
+2. TestDevBootcamp deployment
+
+https://neon-devnet.blockscout.com/address/0xfB16aB1C2B9E14de39CFbe1dDb2799923B685627
+
+3. Solana Account
+
+https://explorer.solana.com/address/8PdTEn5oCQdV6WsZUEDRCx6qfGz8RavAhp4n2551t9PG?cluster=devnet
