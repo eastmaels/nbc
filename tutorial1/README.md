@@ -1,4 +1,4 @@
-# Neon Bootcam - Tutorial 1
+# Neon Bootcamp - Tutorial 1
 
 This is the submission for the first tutorial to Neon's Bootcamp as original described [here](https://bootcamp.neonevm.org/videos/deploy-an-erc-20-for-spl-token-on-neon-evm-and-test-on-solana).
 
