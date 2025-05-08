@@ -52,3 +52,9 @@ PRIVATE_KEY_SOLANA=<SOLANA_PRIVATE_KEY>
 
 `npx hardhat run scripts/TestCallSolana/TestDevBootcamp.js --network neondevnet`
 
+
+## Results
+
+1. Deployed Token
+
+https://neon-devnet.blockscout.com/token/0xA87B8BD076458bb19F640718c82F13C46Fc180d0
