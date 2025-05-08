@@ -1,13 +1,26 @@
-# Neon tutorials with Hardhat
+# Neon Bootcam - Tutorial 1
 
-This directory contains several examples to deploy smart contracts on Neon EVM Devnet or Mainnet.
+This is the submission for the first tutorial to Neon's Bootcamp as original described [here](https://bootcamp.neonevm.org/videos/deploy-an-erc-20-for-spl-token-on-neon-evm-and-test-on-solana).
 
-## Cloning repository
+The objective of this first tutorial is to get acquainted with the Neon network and understand the concepts the lie under how EVM communicates with Solana.
+
+The tutorial is composed of severals steps which breaks down into:
+
+1. Setting up your local environment (installing required nodejs)
+2. Cloning neon-tutorials repo
+3. Modifying the deployment script
+
+One of the challenges I encountered was getting my private key from the default generated secretkey which is a Uint8Array.
+I had to create a script to retrieve my string private key from this Uint8Array and then used this key as value for environment variable `PRIVATE_KEY_SOLANA`.
+
+## Clone repository and change to hardhat directory
 
 Run command
 
 ```sh
 git clone https://github.com/neonlabsorg/neon-tutorials.git
+git checkout -b dev-bootcamp-video
+cd neon-tutorials/hardhat
 ```
 
 **NOTE** All the next operations must be performed from the **neon-tutorials/hardhat** directory.
@@ -32,74 +45,10 @@ Create a .env file in the root project folder and add these lines -
 ```sh
 PRIVATE_KEY_OWNER=<1ST_PRIVATE_KEY>
 USER1_KEY=<2ND_PRIVATE_KEY>
-USER2_KEY=<3RD_PRIVATE_KEY>
+PRIVATE_KEY_SOLANA=<SOLANA_PRIVATE_KEY>
 ```
 
-## References to the example scripts to deploy contracts
+## Run the Deploy script
 
-1. [TestERC20](https://github.com/neonlabsorg/neon-tutorials/blob/main/hardhat/scripts/TestERC20/README.md)
-2. [TestERC721](https://github.com/neonlabsorg/neon-tutorials/blob/main/hardhat/scripts/TestERC721/README.md)
-3. [TestAPI3](https://github.com/neonlabsorg/neon-tutorials/blob/main/hardhat/scripts/TestAPI3/README.md)
-4. [TestChainlink](https://github.com/neonlabsorg/neon-tutorials/blob/main/hardhat/scripts/TestChainlink)
-5. [TestReadSolanaData](https://github.com/neonlabsorg/neon-tutorials/blob/main/hardhat/scripts/TestReadSolanaData/README.md)
-6. [TestCallSolana](https://github.com/neonlabsorg/neon-tutorials/blob/main/hardhat/scripts/TestCallSolana/README.md)
+`npx hardhat run scripts/TestCallSolana/TestDevBootcamp.js --network neondevnet`
 
-## Verify smart contracts on NeonScan
-
-```sh
-npx hardhat verify --network neondevnet <CONTRACT_ADDRESS>
-```
-
-If the smart contract has constructor parameters, then the command to verify is -
-
-```sh
-npx hardhat verify --network neondevnet <CONTRACT_ADDRESS> <PARAM_1> <PARAM_2>
-```
-
-`<CONTRACT_ADDRESS>`, `<PARAM_1>`, `<PARAM_2>` should be replaced with the smart contract address deployed and the constructor parameters for it.
-
-## Verify smart contracts on Blockscout
-
-By default, `hardhat.config.js` file includes the verification details on NeonScan. However, smart contracts can also be verified on Blockscout.
-
-Please replace the following lines in `hardhat.config.js` -
-
-```sh
-etherscan: {
-    apiKey: {
-      neonevm: "test",
-    },
-    customChains: [
-      {
-        network: "neonevm",
-        chainId: 245022926,
-        urls: {
-          apiURL: "https://neon-devnet.blockscout.com/api",
-          browserURL: "https://neon-devnet.blockscout.com",
-        },
-      },
-      {
-        network: "neonevm",
-        chainId: 245022934,
-        urls: {
-          apiURL: "https://neon.blockscout.com/api",
-          browserURL: "https://neon.blockscout.com",
-        },
-      },
-    ],
-},
-```
-
-Run the following to verify -
-
-```sh
-npx hardhat verify --network neondevnet <CONTRACT_ADDRESS>
-```
-
-If the smart contract has constructor parameters, then the command to verify is -
-
-```sh
-npx hardhat verify --network neondevnet <CONTRACT_ADDRESS> <PARAM_1> <PARAM_2>
-```
-
-`<CONTRACT_ADDRESS>`, `<PARAM_1>`, `<PARAM_2>` should be replaced with the smart contract address deployed and the constructor parameters for it.

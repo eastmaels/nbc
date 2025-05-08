@@ -1,10 +1,7 @@
 // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.26;
 
-pragma solidity >= 0.7.0;
-pragma abicoder v2;
-
-interface CallSolana {
-
+interface ICallSolana {
     struct Instruction {
         bytes32 program_id;
         AccountMeta[] accounts;
@@ -38,7 +35,7 @@ interface CallSolana {
     
     // Returns Solana address of the external authority.
     // Calculates as PDA([ACCOUNT_SEED_VERSION, "AUTH", msg.sender, salt], evm_loader_id)
-    function getExtAuthority(bytes32 salt) external view returns (bytes32);
+    function getExtAuthority(bytes32 salt) external view returns (bytes32); // delegatePDA
     
     
     // Return Solana address for payer account (if instruction required some account to funding new created accounts)
