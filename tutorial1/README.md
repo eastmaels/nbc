@@ -23,7 +23,7 @@ git checkout -b dev-bootcamp-video
 cd neon-tutorials/hardhat
 ```
 
-**NOTE** All the next operations must be performed from the **neon-tutorials/hardhat** directory.
+**NOTE** From hereon, the succeeding commands needs to be run from the **neon-tutorials/hardhat** directory.
 
 ## Install the required dependencies
 
