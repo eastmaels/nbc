@@ -32,7 +32,7 @@ npm install
 
 ## Send Wrapped SOL to your EVM Wallet
 
-1. Go to [[Chainlist](https://devnet.neonpass.live/)](https://devnet.neonpass.live/) .
+1. Go to [[Neonpass](https://devnet.neonpass.live/)](https://devnet.neonpass.live/) .
 2. Connect your EVM wallet and Solana wallets
 3. Send SOL to your EVM wallet 
 
