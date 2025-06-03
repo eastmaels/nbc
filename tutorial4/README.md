@@ -82,17 +82,6 @@ PRIVATE_KEY_SOLANA_4=<4TH_SOLANA_PRIVATE_KEY>
     * NEON Contract: [0x69Db081873b9809d64942915653Af1A1F962EC2c](https://neon-devnet.blockscout.com/address/0x69Db081873b9809d64942915653Af1A1F962EC2c)
 
 
-### Transactions
-
-1. Create an SPL token mint with a new seed. `createInitializeTokenMint` instruction
-    * NEON Tx: [0x5b6e4ca16e94c29dee7f6d31101a0c9a6222c7c44a7e2ba656ca29dd7ca9a56b](https://neon-devnet.blockscout.com/tx/0x5b6e4ca16e94c29dee7f6d31101a0c9a6222c7c44a7e2ba656ca29dd7ca9a56b)
-    * SOL Token Mint account: [82zXntBF9msunhV1ViJXYbBYqcd4U3JDcTBicSA9YJjJ](https://explorer.solana.com/address/82zXntBF9msunhV1ViJXYbBYqcd4U3JDcTBicSA9YJjJ?cluster=devnet)
-
-4. `transfer` instruction
-
-    * SOL Recipient Account: [FAB7Fb5KcpW9k54qNDevE8qrbmpydWreE4B9VC8Vvq9U](https://explorer.solana.com/address/FAB7Fb5KcpW9k54qNDevE8qrbmpydWreE4B9VC8Vvq9U?cluster=devnet)
-    * SOL Tx hash: [3Eaz5fYt7HFJKLqAVFgp7TCDmkrssNazuZ2RiL6TzUBS9cB3iaWQqxWyggpnneJipdbt9mJY2sK3zXz7hzEWa9Gi](https://explorer.solana.com/tx/3Eaz5fYt7HFJKLqAVFgp7TCDmkrssNazuZ2RiL6TzUBS9cB3iaWQqxWyggpnneJipdbt9mJY2sK3zXz7hzEWa9Gi?cluster=devnet)
-
 ## Run/s
 
 ![alt text](image.png)
