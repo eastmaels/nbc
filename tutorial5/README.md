@@ -65,7 +65,9 @@ PRIVATE_KEY_SOLANA_4=<4TH_SOLANA_PRIVATE_KEY>
 
 ## IDEA: Potential DeFi Use Case
 
-
+The main use case I can think of in regards to adding liquidity pools in DEXes is basically when you launch your own token.
+The people that compose your community, you give them a portion of your tokens, and then you give them the freedom to swap it to other tokens they want to exchange it with.
+Particularly I guess is converting your token to SOL. 
 
 ## Results
 
