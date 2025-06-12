@@ -6,3 +6,4 @@ Links to tutorial submissions
 * [Tutorial 2](./tutorial2/README.md)
 * [Tutorial 3](./tutorial3/README.md)
 * [Tutorial 4](./tutorial4/README.md)
+* [Tutorial 5](./tutorial5/README.md)
